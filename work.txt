@@ -1,0 +1,10 @@
+1) Ajax calls to storage/retrieve data
+POST - a type of request to a server usually meant for storage
+GET - a type of http request to a server usually meant for retrieval 
+PUT - 
+DELETE - 
+Use this site https://jsonplaceholder.typicode.com/guide.html to POST data and GET it
+
+Build a page that allows a user to add a dog {name, type, weight, colour} 
+The page should also fetch a list of already added dogs
+Do some manipulations on the retrieved list such as sorting / searching etc

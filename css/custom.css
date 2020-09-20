@@ -1,0 +1,9 @@
+ /* td{
+            padding:50px;
+            
+        } */
+
+        #enterdog,#getdogs,#updateordeletedogs {
+            width: 50%;
+            margin:2rem;
+        }

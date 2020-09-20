@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <title>Ajax Calls</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+</head>
+<body>
+    <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="/">
+            <img src="https://img.icons8.com/plasticine/2x/dog.png" alt="" width="50" height="28">
+          </a>
+        </div>
+    </nav>
+    <section class="hero is-primary">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title">
+              Dog Things
+            </h1>
+            <h2 class="subtitle">
+              API Practice 
+            </h2>
+          </div>
+        </div>
+      </section>
+    <div>
+        <div id="getdogs">
+        <h3 class="title">Dog Info</h3>
+        <table  class="table is-bordered is-striped is-hoverable is-fullwidth">
+            <thead>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Weight (lbs)</th>
+                <th>Color</th>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table> 
+        </div>
+        <div class="columns">
+        	<div class="column">
+        		<form id="enterdog">
+	                <h1 class="title">Enter Dog Info</h1>
+	                <div class="field">
+	                    <label class="label">Name</label>
+	                    <div class="control">
+	                    <input id="name" class="input is-primary" type="text" placeholder="Text input">
+	                    </div>
+	                </div>
+	                <div class="field">
+	                    <label class="label">Type</label>
+	                    <div class="control">
+	                    <input id="type" class="input is-primary" type="text" placeholder="Text input">
+	                    </div>
+	                </div>
+	                <div class="field">
+	                    <label class="label">Weight</label>
+	                    <div class="control">
+	                    <input id="weight" class="input is-primary" type="number" placeholder="Number input">
+	                    </div>
+	                </div>
+	                <div class="field">
+	                    <label class="label">Color</label>
+	                    <div class="control">
+	                    <input id="color" class="input is-primary" type="text" placeholder="Text input">
+	                    </div>
+	                </div> 
+	                <div class="field is-grouped"> 
+	                    <div class="control">
+	                    <button id="sub-btn"class="button is-link" type="button">Submit</button>
+	                    </div>
+	                </div>
+	            </form>
+        	</div>
+        	<div class="column">
+        		<form id="updateordeletedogs">
+        			<h1 class="title">Update/Delete Dogs</h1>
+	        			<div class="field">
+	        				<label class="label">Name</label>
+						  	<div class="control">
+						    	<div class="select is-primary">
+						      		<select id="dog_names">
+						      		</select>
+						    	</div>
+						  	</div>
+						</div>
+						<div class="field">
+		                    <label class="label">Type</label>
+		                    <div class="control">
+		                    	<input id="up_type" class="input is-primary" type="text" placeholder="Text input">
+	                    	</div>
+	                </div>
+	                <div class="field">
+	                    <label class="label">Weight</label>
+	                    <div class="control">
+	                    	<input id="up_weight" class="input is-primary" type="text" placeholder="Number input">
+	                    </div>
+	                </div>
+	                <div class="field">
+	                    <label class="label">Color</label>
+		                    <div class="control">
+		                    	<input id="up_color" class="input is-primary" type="text" placeholder="Text input">
+		                    </div>
+	                </div> 
+						<div class="columns">
+							<div class="column">
+								<div class="field is-grouped"> 
+			                    <div class="control">
+			                    	<button id="update-btn"class="button is-success" type="button">Update</button>
+			                    </div>
+			                </div>
+							</div>
+							<div class="column">
+								<div class="field is-grouped"> 
+			                    <div class="control">
+			                    	<button id="delete-btn"class="button is-danger" type="button">Delete</button>
+			                    </div>
+			                </div>
+							</div>
+						</div>
+		                
+        		</form>
+        		
+        	</div>
+            
+        </div>
+    </div>
+ 
+ <!-- <p data-hello="thisisdata">hello</p> -->
+ <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+ <script src="js/main.js"></script>
+</html>
