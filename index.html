@@ -31,7 +31,13 @@
     <div>
         <div id="getdogs">
         <h3 class="title">Dog Info</h3>
-        <table  class="table is-bordered is-striped is-hoverable is-fullwidth">
+        <div class="field">
+	        <!-- <label class="label">Name</label> -->
+	        <div class="control">
+	             <input id="searchDogInfo" class="input is-primary" type="text" placeholder="Search">
+	        </div>
+	    </div>
+        <table  id="dogInfo" class="table is-bordered is-striped is-hoverable is-fullwidth">
             <thead>
                 <th>ID</th>
                 <th>Name</th>

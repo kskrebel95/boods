@@ -1,1 +1,1 @@
--- added last changes file
+-- added search dog info function

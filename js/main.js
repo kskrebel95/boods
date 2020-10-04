@@ -199,5 +199,12 @@ $( document ).ready(function() {
                  });
             });
    			
+            $("#searchDogInfo").keyup(function(){
+                var result = $(this).val().toLowerCase();
+
+                $("#dogInfo tr").filter(function(){
+                    $(this).toggle($(this).text().toLowerCase().indexOf(result)>=0);
+                });
+            });
              
         });
