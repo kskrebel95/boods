@@ -46,7 +46,7 @@ $( document ).ready(function() {
                     $.each( data.dogs, function( index,dogs) {
                         // console.log(data.dogs[index]);
                         $("#getdogs tbody").append("<tr><td>"+data.dogs[index].id+"</td><td>"+data.dogs[index].name+"</td><td>"+data.dogs[index].type+"</td><td>"+data.dogs[index].weight+"</td><td>"+data.dogs[index].color+"</td></tr>");
-
+                        //Creates dropdown 
                         $("#updateordeletedogs select").append("<option data-dogsid="+data.dogs[index].id+" value="+data.dogs[index].name+">"+data.dogs[index].name+"</option>");
                     });
                     // console.log(data.dogs[0].name);
@@ -206,5 +206,27 @@ $( document ).ready(function() {
                     $(this).toggle($(this).text().toLowerCase().indexOf(result)>=0);
                 });
             });
-             
+
+            $("#sortId, #sortName, #sortType,#sortWeight, #sortColor ").on("click",function(){
+                
+                $.ajax({
+                method: "GET",
+                url: "https://my-json-server.typicode.com/kskrebel95/mockjson/dogs",
+                dataType: "json"
+                }).done(function(data){
+                    console.log(data);
+                    
+                });
+
+            });
+
+            // $("#sortId").on("mousemove",function(e){
+            //     console.log(e.currentTarget);
+            // });
+            $("#sortId").on("click",function(){
+
+            
+            });
         });
+
+        

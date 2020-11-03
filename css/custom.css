@@ -7,3 +7,7 @@
             width: 50%;
             margin:2rem;
         }
+
+        #dogInfo button {
+        	border: none;
+        }

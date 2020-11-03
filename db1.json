@@ -1,0 +1,25 @@
+{
+    "dogs": [
+      {
+        "id":1,
+        "name":"Krypto",
+        "type":"Labrador Retriever",
+        "weight":"50 lbs",
+        "color":"White"
+      },
+      {
+        "id":2,
+        "name":"Ace",
+        "type":"Dobberman",
+        "weight":"45 lbs",
+        "color":"Black"
+      },
+      {
+        "id":3,
+        "name":"LockJaw",
+        "type":"Bulldog",
+        "weight":"245 lbs",
+        "color":"Grey" 
+      }
+    ]
+} 

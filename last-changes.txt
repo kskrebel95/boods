@@ -1,1 +1,1 @@
--- added search dog info function
+-- continued on click function of all table button headers
